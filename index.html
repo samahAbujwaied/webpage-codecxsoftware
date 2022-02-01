@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>CodecxSoftware</title>
     <meta charset="utf-8">
@@ -13,37 +14,35 @@
 <body>
     <!-- start header -->
     <header>
+        <!-- start navigation bar -->
         <nav class="navbar navbar-inverse ">
-            <div id="navbar" class="container-fluid">
-                <div class="navbar-header  ">
+            <div class="container-fluid">
+                <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <!-- logo -->
                     <a class="navbar-brand" href="#">Logo</a>
                 </div>
 
-                <div  class="collapse navbar-collapse " id="myNavbar">
-                    <ul class="nav navbar-nav ">
-                        <li><a href="#"><span id="home">Home</span></a></li>
+                <div class="collapse navbar-collapse " id="myNavbar">
+                    <ul class="nav navbar-nav " id='items'>
+
+                        <li id="idhome"><a href="#"><span id="home">Home</span></a></li>
                         <li><a href="#"> <span id="more">More</span></a></li>
                         <li><a href="#"><span id="news">News</span></a></li>
                         <li><a href="#"><span id="aboutUs">About us</span></a></li>
                         <li><a href="#"><span id="contactUs">Contact us</span></a></li>
-                    </ul>
 
-                    <ul class="nav navbar-nav ">
-                        <li>
-                            <a href="#" id="lang">
-                                <span id='translate'>Arabic</span>
-                            </a>
-                        </li>
+                        <li><a href="#" id="language"><span id='translate'>Arabic</span> </a></li>
                     </ul>
 
                 </div>
             </div>
         </nav>
+        <!-- end navigation bar -->
     </header>
     <!-- end header -->
 
@@ -51,6 +50,7 @@
     <main>
 
         <div class="container">
+            <!-- paragraph parts -->
             <div class="row">
                 <div class="col-12 col-md-6 col-xs-6">
                     <div class="paragraph">
@@ -100,16 +100,15 @@
             </div>
         </div>
     </main>
-
     <!-- end main -->
 
     <!-- start footer -->
-    <footer id="footer"  class="page-footer">
+    <footer id="footer" class="page-footer">
         <div class="container-fluid ">
             <div class="row">
                 <hr class="clearfix w-100 d-md-none pb-3">
 
-                <div class="col-md-3 mb-md-0 mb-3">
+                <div class="col-md-3 col-xs-12  " id="align1">
                     <h5 id='contact'>Contact Us</h5>
                     <ul class="list-unstyled">
                         <li>
@@ -134,7 +133,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-3 mb-md-0 mb-3">
+                <div class="col-md-3 col-xs-12  " id="align2">
                     <h5 id='sitemap1'>Sitemap</h5>
                     <ul class="list-unstyled">
                         <li>
@@ -149,7 +148,7 @@
                     </ul>
                 </div>
 
-                <div  class="col-md-3 mb-md-0 mb-3">
+                <div class="col-md-3 col-xs-12   " id="align3">
                     <h5 id="sitemap2">Sitemap</h5>
                     <ul class="list-unstyled">
                         <li>
@@ -165,15 +164,7 @@
 
                 </div>
 
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <div class="z-depth-1-half map-container">
-                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" style="border:0" allowfullscreen>
-                        </iframe>
-                    </div>
 
-
-                </div>
             </div>
         </div>
     </footer>
