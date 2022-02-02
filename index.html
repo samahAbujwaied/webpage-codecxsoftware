@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- start header -->
     <header>
-        <nav class="navbar navbar-inverse">
+        <!-- start navigation bar -->
+        <nav class="navbar navbar-inverse ">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -21,31 +24,36 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <!-- logo -->
                     <a class="navbar-brand" href="#">Logo</a>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav ">
-                        <li><a href="#"><span id="home">Home</span></a></li>
+
+                <div class="collapse navbar-collapse " id="myNavbar">
+                    <ul class="nav navbar-nav " id='items'>
+
+                        <li id="idhome"><a href="#"><span id="home">Home</span></a></li>
                         <li><a href="#"> <span id="more">More</span></a></li>
                         <li><a href="#"><span id="news">News</span></a></li>
                         <li><a href="#"><span id="aboutUs">About us</span></a></li>
                         <li><a href="#"><span id="contactUs">Contact us</span></a></li>
 
+                        <li><a href="#" id="language"><span id='translate'>Arabic</span> </a></li>
+                    </ul>
 
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" id="lang"> <span id='translate'>Arabic</span> </a></li>
-                    </ul>
                 </div>
             </div>
         </nav>
+        <!-- end navigation bar -->
     </header>
+    <!-- end header -->
 
+    <!-- start main -->
     <main>
 
         <div class="container">
+            <!-- paragraph parts -->
             <div class="row">
-                <div class="col-12 col-md-6 col-sm-3 col-xs-6">
+                <div class="col-12 col-md-6 col-xs-6">
                     <div class="paragraph">
                         <p id='paragraph1'>
                             This is a paragraph one , and the paragraph two is below this one ,This is a paragraph one ,
@@ -65,12 +73,16 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-sm-3 col-xs-6"></div>
+                <div class="col-12 col-md-6  col-xs-6" >
+                    <img id="img1" class="img" src="/img/img1.jpeg" alt="image1" />
+                </div>
             </div>
 
             <div class="row">
-                <div class="col-12 col-md-6 col-sm-3 col-xs-6"></div>
-                <div class="col-12 col-md-6 col-sm-3 col-xs-6">
+                <div class="col-12 col-md-6 col-xs-6">
+                    <img id="img2" class="img" src="/img/img1.jpeg" alt="image1" />
+                </div>
+                <div class="col-12 col-md-6  col-xs-6">
                     <div class="paragraph">
                         <p id='paragraph2'>
                             This is a paragraph one , and the paragraph two is below this one ,This is a paragraph one ,
@@ -91,102 +103,80 @@
                     </div>
                 </div>
             </div>
-
-
-            <div>
-
-            </div>
-
-
         </div>
     </main>
+    <!-- end main -->
 
-
-    <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4">
-
-        <div class="container-fluid text-center text-md-left">
+    <!-- start footer -->
+    <footer id="footer" class="page-footer">
+        <div class="container-fluid ">
             <div class="row">
                 <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <h5 class="text-uppercase" id='contact'>Contact Us</h5>
+
+                <div class="col-md-3 col-xs-12  " id="align1">
+                    <h5 id='contact'>Contact Us</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <label id='poBox'>Po.Box</label>
-                            <input type="radio" name='contactUs' />
+                            <i style="font-size:20px" class="fa">&#xf01c; </i>
+                            <span id='poBox'>Po.Box</span>
+                        </li>
 
+                        <li>
+                            <i style="font-size:20px" class="fa">&#xf098;</i>
+                            <span id='phone'>Phone</span>
+                           
+                        </li>
+
+                        <li>
+                            <i style="font-size:20px" class="fa">&#xf1ac; </i>
+                            <span id='fax'>Fax</span>
+                            
+                        </li>
+
+                        <li>
+                            <i style="font-size:20px" class="fa">&#xf124;</i>
+                            <span id='locate'>Location</span>
+                            
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-xs-12  " id="align2">
+                    <h5 id='sitemap1'>Sitemap</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" id='home-footer'>Home</a>
                         </li>
                         <li>
-                            <label id='phone'>Phone</label>
-                            <input type="radio" name='contactUs' />
-
+                            <a href="#" id='more-footer'>More</a>
                         </li>
                         <li>
-                            <label id='fax'>Fax</label>
-                            <input type="radio" name='contactUs' />
+                            <a href="#" id='read-footer'>Read</a>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="col-md-3 col-xs-12   " id="align3">
+                    <h5 id="sitemap2">Sitemap</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" id='news-footer'>News</a>
                         </li>
                         <li>
-                            <label id='locate'>Location</label>
-                            <input type="radio" name='contactUs' />
-
+                            <a href="#" id='aboutus-footer'>About us </a>
+                        </li>
+                        <li>
+                            <a href="#" id=contactus-footer>Contact us</a>
                         </li>
                     </ul>
 
                 </div>
 
-                <div class="col-md-3 mb-md-0 mb-3">
 
-                    <h5 class="text-uppercase" id='sitemap1'>Sitemap</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!" id='home-footer'>Home</a>
-                        </li>
-                        <li>
-                            <a href="#!" id='more-footer'>More</a>
-                        </li>
-                        <li>
-                            <a href="#!" id='read-footer'>Read</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <h5 class="text-uppercase" id="sitemap2">Sitemap</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!" id='news-footer'>News</a>
-                        </li>
-                        <li>
-                            <a href="#!" id='aboutus-footer'>About us </a>
-                        </li>
-                        <li>
-                            <a href="#!" id=contactus-footer>Contact us</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-
-
-                </div>
             </div>
-
         </div>
     </footer>
-
+    <!-- end footer -->
 
 </body>
 <script src="/js/src.js"></script>
