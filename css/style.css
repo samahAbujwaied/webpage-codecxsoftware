@@ -10,6 +10,10 @@
   }
   .img{
       align-items: center;
+      width: 200px;
+  }
+  .fa{
+      padding: 3px;
   }
   
   
