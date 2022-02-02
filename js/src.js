@@ -38,6 +38,9 @@ let align1 = document.getElementById('align1');
 let align2 = document.getElementById('align2');
 let align3 = document.getElementById('align3');
 
+let img1 =document.getElementById('img1');
+let img2 = document.getElementById('img2');
+
 let translatelang= 'arabic'
 
 language.onclick = ()=>{
@@ -83,6 +86,8 @@ function setLanguage(getlanguage){
         align2.style.float='right'
         align3.style.float='right';
         idhome.style.float='right';
+        img1.style.float='right';
+        img2.style.float='right';
 
         translatelang='english'
     }
@@ -125,7 +130,9 @@ function setLanguage(getlanguage){
         align1.style.float='left';
         align2.style.float='left';
         align3.style.float='left';
-
+        img1.style.float='left';
+        img2.style.float='left';
+        
         translatelang='arabic'
     }
 
