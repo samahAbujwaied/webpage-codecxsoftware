@@ -3,13 +3,53 @@
     background-color: #1b365b;
     border: none;
   }
-
-  
   .navbar-inverse .navbar-toggle {
     border-color: #fff;
   }
+  .navbar-header{
+      display: inline-block;
+      float: right;
+  }
   .img{
       align-items: center;
+      width: 100%;
   }
+  .fa{
+      padding: 3px;
+  }
+  .nav li{
+    position: relative;
+    display: block;
+  }
+  .navbar-nav {
+    width: 37%;
+    margin: 2px;
+  }
+  
+  .map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+
+    .map-container iframe{
+    left:0;
+    top:0;
+    width:100%;
+    position:absolute;
+    }
+
+    #navigatin{
+      padding: 10px;
+    }
+    #translate{
+      margin: auto;
+    }
+   
+    
+   
+    
+    
   
   
