@@ -20,6 +20,10 @@ let aboutUsfooter = document.getElementById('aboutus-footer');
 let contactus = document.getElementById('contactus-footer');
 
 let idhome= document.getElementById('idhome');
+let idmore= document.getElementById('idmore');
+let idnews =document.getElementById('idnews');
+let idabout =document.getElementById('idabout');
+let idcontact =document.getElementById('idcontact');
 
 let myNavbar = document.getElementById('myNavbar');
 let home = document.getElementById('home');
@@ -29,9 +33,12 @@ let aboutUs = document.getElementById('aboutUs');
 let contactUs= document.getElementById('contactUs');
 let translate= document.getElementById('translate');
 
+let navigatin = document.getElementById('navigatin');
+
 let navlang = document.getElementById('navlang');
 let items = document.getElementById('items');
 
+let logo =document.getElementById('logo');
 
 let footer = document.getElementById('footer');
 let align1 = document.getElementById('align1');
@@ -85,11 +92,23 @@ function setLanguage(getlanguage){
         align1.style.float='right';
         align2.style.float='right'
         align3.style.float='right';
+        // items.style.display='flex'
+
         idhome.style.float='right';
+        idabout.style.float='right';
+        idcontact.style.float='right';
+        idnews.style.float='right';
+        idmore.style.float='right';
+        language.style.float='left';
+        logo.style.float='right';
+        
+
         img1.style.float='right';
         img2.style.float='right';
 
-        translatelang='english'
+        navigatin.style.float='left';
+
+        translatelang='english';
     }
     else if (getlanguage=='english')
     {
@@ -126,13 +145,24 @@ function setLanguage(getlanguage){
         footer.style.direction='ltr';
 
         items.style.float='left';
+
         idhome.style.float='left';
+        idabout.style.float='left';
+        idcontact.style.float='left';
+        idnews.style.float='left';
+        idmore.style.float='left';
+        language.style.float='right';
+
+        logo.style.float='left';
+
         align1.style.float='left';
         align2.style.float='left';
         align3.style.float='left';
         img1.style.float='left';
         img2.style.float='left';
-        
+
+        navigatin.style.float='right';
+
         translatelang='arabic'
     }
 

@@ -9,7 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,31 +19,35 @@
         <!-- start navigation bar -->
         <nav class="navbar navbar-inverse ">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <div class="navbar-header" id="navigatin">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!-- logo -->
-                    <a class="navbar-brand" href="#">Logo</a>
                 </div>
+
+                <p id="logo" class="navbar-brand" href="#">Logo</p>
 
                 <div class="collapse navbar-collapse " id="myNavbar">
                     <ul class="nav navbar-nav " id='items'>
-
+                
                         <li id="idhome"><a href="#"><span id="home">Home</span></a></li>
-                        <li><a href="#"> <span id="more">More</span></a></li>
-                        <li><a href="#"><span id="news">News</span></a></li>
-                        <li><a href="#"><span id="aboutUs">About us</span></a></li>
-                        <li><a href="#"><span id="contactUs">Contact us</span></a></li>
+                        <li id="idmore"><a href="#"> <span id="more">More</span></a></li>
+                        <li id="idnews"><a href="#"><span id="news">News</span></a></li>
+                        <li id="idabout"><a href="#"><span id="aboutUs">About us</span></a></li>
+                        <li id="idcontact"><a href="#"><span id="contactUs">Contact us</span></a></li>
+                        <li id="language"><a href="#"><label id='translate'>Arabic</label></a></li>
 
-                        <li><a href="#" id="language"><span id='translate'>Arabic</span> </a></li>
+                        <!-- <li><a href="#" id="language"><label id='translate'>Arabic</label> </a></li> -->
                     </ul>
 
                 </div>
             </div>
         </nav>
+
+  
+
         <!-- end navigation bar -->
     </header>
     <!-- end header -->
@@ -73,7 +78,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6  col-xs-6" >
+                <div class="col-12 col-md-6  col-xs-6">
                     <img id="img1" class="img" src="/img/img1.jpeg" alt="image1" />
                 </div>
             </div>
@@ -124,19 +129,19 @@
                         <li>
                             <i style="font-size:20px" class="fa">&#xf098;</i>
                             <span id='phone'>Phone</span>
-                           
+
                         </li>
 
                         <li>
                             <i style="font-size:20px" class="fa">&#xf1ac; </i>
                             <span id='fax'>Fax</span>
-                            
+
                         </li>
 
                         <li>
                             <i style="font-size:20px" class="fa">&#xf124;</i>
                             <span id='locate'>Location</span>
-                            
+
                         </li>
                     </ul>
                 </div>
@@ -172,13 +177,23 @@
 
                 </div>
 
+                <div class="col-md-3 col-xs-12   ">
+
+                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
 
             </div>
         </div>
+    
     </footer>
     <!-- end footer -->
-
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="/js/src.js"></script>
 
 </html>
