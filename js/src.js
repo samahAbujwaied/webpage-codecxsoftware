@@ -92,7 +92,6 @@ function setLanguage(getlanguage){
         align1.style.float='right';
         align2.style.float='right'
         align3.style.float='right';
-        // items.style.display='flex'
 
         idhome.style.float='right';
         idabout.style.float='right';

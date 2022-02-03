@@ -18,30 +18,33 @@
       padding: 3px;
   }
   .nav li{
-
     position: relative;
     display: block;
-    /* background-color: brown; */
-
   }
   .navbar-nav {
-    width: 42%;
+    width: 37%;
+    margin: 2px;
   }
+  
   .map-container{
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
     height:0;
     }
+
     .map-container iframe{
     left:0;
     top:0;
-   
     width:100%;
     position:absolute;
     }
+
     #navigatin{
       padding: 10px;
+    }
+    #translate{
+      margin: auto;
     }
    
     
